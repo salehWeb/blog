@@ -93,14 +93,11 @@ export default function Posts() {
     };
 
     return (
-        <Box className='max-w-[100vw]'>
-            <div className="mx-4">
+        <Box className='flex flex-col justify-center items-center mx-4 mb-10'>
 
-                <Box className="w-full items-center text-3xl text-gray-800 font-bold mb-4 flex gap-4">
-                    <Typography variant='h4'>
-                        Posts
-                    </Typography>
-                </Box>
+            <div className="flex w-full flex-col items-start gap-4 mt-10 justify-start">
+
+            <h1 className='text-3xl text-gray-800 font-bold mb-4'>Posts</h1>
 
                 {!isLoading ?
                     count < 1 ?
@@ -115,7 +112,6 @@ export default function Posts() {
                                 </Link>
                                 <TableContainer>
                                     <Table stickyHeader aria-label="sticky table">
-
                                         <TableHead>
                                             <TableRow>
                                                 <TableCell className="text-base">slug</TableCell>

@@ -4,7 +4,7 @@ import Profile from '../../components/Profile'
 
 const Dashboard = () => {
   return (
-    <div className="flex flex-col gap-[120px] my-10">
+    <div className="flex flex-col gap-y-20">
         <Profile />
         <ViewsChart />
         <Posts />
